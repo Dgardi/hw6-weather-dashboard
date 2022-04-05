@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <header class="header" id="dashHeader">Weather Dashboard</header>
+    <nav class="sidebar">
+        <h1>Search for a City</h1>
+        <form class="inputContainter" action="action_page.php">
+            <input type="text" placeholder="Atlanta" name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        
+        <button class="button austin">Austin</button>
+        <button class="button chicago">Chicago</button>
+        <button class="button newyork">New York</button>
+        <button class="button orlando">Orlando</button>
+        <button class="button sanfrancisco">San Francisco</button>
+        <button class="button seattle">Seattle</button>
+        <button class="button denver">Denver</button>
+        <button class="button atlanta">Atlanta</button>
+
+    </nav>
+    <main>
+      <section class="cityInfo city details"> THIS IS A PLACEHOLDER!!!!</section>  
+      <h2>5-Day Forecast</h2>
+      <div id="cards">
+        <p class="weather" id="day1"></p>
+        <div class="weatherPic"><img src="#" class="imgClass" id="img1"></img> </div>
+        <p class="temp" id="d1temp">Loading..</p>
+        <p class="wind" id="d1wind">Loading..</p>
+        <p class="humidity" id="d1humidity">Loading..</p>
+      </div>
+
+      <div id="cards">
+        <p class="weather" id="day2">This is a placeholder</p>
+        <div class="weatherPic"><img src="#" class="imgClass" id="img2"></img> </div>
+        <p class="temp" id="d2temp">Loading..</p>
+        <p class="wind" id="d2wind">Loading..</p>
+        <p class="humidity" id="d2humidity">Loading..</p>
+      </div>
+
+      <div id="cards">
+        <p class="weather" id="day3"></p>
+        <div class="weatherPic"><img src="#" class="imgClass" id="img3"></img> </div>
+        <p class="temp" id="d3temp">Loading..</p>
+        <p class="wind" id="d3wind">Loading..</p>
+        <p class="humidity" id="d3humidity">Loading..</p>
+      </div>
+
+      <div id="cards">
+        <p class="weather" id="day4"></p>
+        <div class="weatherPic"><img src="#" class="imgClass" id="img4"></img> </div>
+        <p class="temp" id="d4temp">Loading..</p>
+        <p class="wind" id="d4wind">Loading..</p>
+        <p class="humidity" id="d4humidity">Loading..</p>
+      </div>
+
+      <div id="cards">
+        <p class="weather" id="day5"></p>
+        <div class="weatherPic"><img src="#" class="imgClass" id="img5"></img> </div>
+        <p class="temp" id="d5temp">Loading..</p>
+        <p class="wind" id="d5wind">Loading..</p>
+        <p class="humidity" id="d5humidity">Loading..</p>
+      </div>
+    </main>
+    
+    https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
+    
+</body>
+</html>
